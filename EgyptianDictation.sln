@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5220BC42-AEE1-4FE6-AA12-C8846A723128}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgyptianDictation.Contracts", "src\EgyptianDictation.Contracts\EgyptianDictation.Contracts.csproj", "{B19BE5BE-95FC-44A0-AC6B-FAD022D88331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgyptianDictation.Core", "src\EgyptianDictation.Core\EgyptianDictation.Core.csproj", "{8855C813-BF22-4A78-A627-375D1BF7E73A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgyptianDictation.Host", "src\EgyptianDictation.Host\EgyptianDictation.Host.csproj", "{CCC3DB78-77E4-42BD-ACB5-AE5AB5263F7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CA99DE50-3121-4404-B761-F9EB25F35A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgyptianDictation.Tests", "tests\EgyptianDictation.Tests\EgyptianDictation.Tests.csproj", "{C53D3594-C580-4581-A5C6-AE765EB0DE51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgyptianDictation.WordAddIn", "src\EgyptianDictation.WordAddIn\EgyptianDictation.WordAddIn.csproj", "{151A70E7-1952-4405-9711-A6CCF65CE2C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgyptianDictation.Setup", "src\EgyptianDictation.Setup\EgyptianDictation.Setup.csproj", "{FFA237C7-2388-48F5-878B-077E3C7489FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArabicSTTWorker", "src\ArabicSTTWorker\ArabicSTTWorker.csproj", "{9B1C1D1A-1918-43FB-8D04-67E6E3B03084}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B19BE5BE-95FC-44A0-AC6B-FAD022D88331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19BE5BE-95FC-44A0-AC6B-FAD022D88331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19BE5BE-95FC-44A0-AC6B-FAD022D88331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19BE5BE-95FC-44A0-AC6B-FAD022D88331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8855C813-BF22-4A78-A627-375D1BF7E73A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8855C813-BF22-4A78-A627-375D1BF7E73A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8855C813-BF22-4A78-A627-375D1BF7E73A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8855C813-BF22-4A78-A627-375D1BF7E73A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCC3DB78-77E4-42BD-ACB5-AE5AB5263F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC3DB78-77E4-42BD-ACB5-AE5AB5263F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC3DB78-77E4-42BD-ACB5-AE5AB5263F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC3DB78-77E4-42BD-ACB5-AE5AB5263F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53D3594-C580-4581-A5C6-AE765EB0DE51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53D3594-C580-4581-A5C6-AE765EB0DE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53D3594-C580-4581-A5C6-AE765EB0DE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53D3594-C580-4581-A5C6-AE765EB0DE51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{151A70E7-1952-4405-9711-A6CCF65CE2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151A70E7-1952-4405-9711-A6CCF65CE2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151A70E7-1952-4405-9711-A6CCF65CE2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151A70E7-1952-4405-9711-A6CCF65CE2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA237C7-2388-48F5-878B-077E3C7489FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA237C7-2388-48F5-878B-077E3C7489FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA237C7-2388-48F5-878B-077E3C7489FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA237C7-2388-48F5-878B-077E3C7489FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1C1D1A-1918-43FB-8D04-67E6E3B03084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1C1D1A-1918-43FB-8D04-67E6E3B03084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1C1D1A-1918-43FB-8D04-67E6E3B03084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1C1D1A-1918-43FB-8D04-67E6E3B03084}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B19BE5BE-95FC-44A0-AC6B-FAD022D88331} = {5220BC42-AEE1-4FE6-AA12-C8846A723128}
+		{8855C813-BF22-4A78-A627-375D1BF7E73A} = {5220BC42-AEE1-4FE6-AA12-C8846A723128}
+		{CCC3DB78-77E4-42BD-ACB5-AE5AB5263F7D} = {5220BC42-AEE1-4FE6-AA12-C8846A723128}
+		{C53D3594-C580-4581-A5C6-AE765EB0DE51} = {CA99DE50-3121-4404-B761-F9EB25F35A76}
+		{151A70E7-1952-4405-9711-A6CCF65CE2C8} = {5220BC42-AEE1-4FE6-AA12-C8846A723128}
+		{FFA237C7-2388-48F5-878B-077E3C7489FF} = {5220BC42-AEE1-4FE6-AA12-C8846A723128}
+		{9B1C1D1A-1918-43FB-8D04-67E6E3B03084} = {5220BC42-AEE1-4FE6-AA12-C8846A723128}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+Egyptian Dictation - Third-Party Notices
+
+The production package contains only the components listed below. The license
+texts shipped under licenses/ govern their use.
+
+- CohereLabs/cohere-transcribe-arabic-07-2026, Apache-2.0
+  https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
+- Q5_K_M GGUF conversion distributed by handy-computer and epapanita,
+  derived from the Cohere model, Apache-2.0
+  https://huggingface.co/epapanita/cohere-transcribe-arabic-07-2026-gguf
+- transcribe.cpp v0.1.1, commit d89ecb75062e8457681c563994675dc60e31db80
+  https://github.com/handy-computer/transcribe.cpp
+- ggml, MIT License
+  https://github.com/ggml-org/ggml
+- NAudio 2.2.1, MIT License
+  https://github.com/naudio/NAudio
+
+- Microsoft Visual C++ Redistributable x64, version 14.51.36247.0
+  Official offline installer, installed only when the existing version is older.
+  https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
+  Redistribution is subject to Microsoft's Visual Studio license terms.
+
+- Microsoft .NET Framework 4.8 offline runtime
+  Official offline installer, installed only if .NET Framework 4.8 or newer is absent.
+  https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
+  Redistribution is subject to Microsoft's license terms.
+
+Python, PyTorch, CUDA and cloud speech services are not distributed or used by
+the production application.

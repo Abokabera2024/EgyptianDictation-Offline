@@ -1,0 +1,40 @@
+<Window x:Class="EgyptianDictation.Host.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="الإملاء المصري دون إنترنت" Height="620" Width="760"
+        WindowStartupLocation="CenterScreen" FlowDirection="RightToLeft">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="الإملاء العربي والمصري دون إنترنت" FontSize="26" FontWeight="SemiBold" />
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,18,0,14">
+            <Button x:Name="StartButton" Content="بدء الإملاء" Width="130" Height="38" Margin="0,0,8,0" Click="Start_Click" />
+            <Button x:Name="StopButton" Content="إيقاف" Width="90" Height="38" IsEnabled="False" Click="Stop_Click" />
+            <TextBlock x:Name="StatusText" Text="جاهز" VerticalAlignment="Center" Margin="18,0,0,0" />
+        </StackPanel>
+
+        <TextBox x:Name="TranscriptBox" Grid.Row="2" FontSize="20" TextWrapping="Wrap"
+                 AcceptsReturn="True" VerticalScrollBarVisibility="Auto" IsReadOnly="True"
+                 Padding="14" FlowDirection="RightToLeft" />
+
+        <DockPanel Grid.Row="3" Margin="0,14,0,0">
+            <Button Content="نسخ النص" Width="100" Height="34" Click="Copy_Click" DockPanel.Dock="Right" />
+            <TextBlock x:Name="MetricsText" VerticalAlignment="Center" Foreground="#666" />
+        </DockPanel>
+
+        <Expander Grid.Row="4" Header="التشخيصات" Margin="0,10,0,0">
+            <TextBlock x:Name="DiagnosticsText" Foreground="#555" TextWrapping="Wrap"
+                       Text="المحرك: Cohere Transcribe Arabic 07-2026 | Q5_K_M | CPU | النموذج: غير محمل" />
+        </Expander>
+        <TextBlock x:Name="AttributionText" Grid.Row="5" Margin="0,12,0,0"
+                   TextWrapping="Wrap" Foreground="#666" FontSize="12" />
+    </Grid>
+</Window>

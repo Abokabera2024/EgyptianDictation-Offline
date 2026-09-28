@@ -1,0 +1,38 @@
+<Window x:Class="EgyptianDictation.Setup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="تثبيت الإملاء المصري دون إنترنت" Height="660" Width="760"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" FlowDirection="RightToLeft">
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="الإملاء العربي والمصري دون إنترنت" FontSize="25" FontWeight="SemiBold" />
+        <TextBlock Grid.Row="1" Margin="0,14,0,0" TextWrapping="Wrap" FontSize="15"
+                   Text="سيتم تثبيت التطبيق ومحرك التعرف والنموذج وإضافة Word كاملة على هذا الجهاز. لا يحتاج التشغيل بعد ذلك إلى الإنترنت أو Python أو .NET." />
+        <TextBlock Grid.Row="2" Margin="0,18,0,8" Text="شروط الاستخدام والمسؤولية" FontSize="17" FontWeight="SemiBold" />
+        <TextBox x:Name="TermsText" Grid.Row="3" IsReadOnly="True" TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"
+                 Padding="12" FontSize="14" BorderBrush="#999" />
+        <CheckBox x:Name="AcceptTerms" Grid.Row="4" Margin="0,12,0,0"
+                  Content="قرأت شروط الاستخدام وأوافق عليها" Checked="AcceptTerms_Changed"
+                  Unchecked="AcceptTerms_Changed" FontWeight="SemiBold" />
+        <ProgressBar x:Name="Progress" Grid.Row="5" Height="18" Margin="0,16,0,0" IsIndeterminate="False" />
+        <TextBlock x:Name="Status" Grid.Row="6" Margin="0,10,0,0" Text="وافق على الشروط للمتابعة" Foreground="#555" />
+        <StackPanel Grid.Row="7" Margin="0,12,0,0" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Button x:Name="InstallButton" Content="تثبيت" Width="120" Height="38" Click="Install_Click" IsEnabled="False" />
+            <Button Content="إغلاق" Width="90" Height="38" Margin="8,0,0,0" Click="Close_Click" />
+        </StackPanel>
+        <TextBlock x:Name="AttributionText" Grid.Row="8" Margin="0,12,0,0"
+                   TextWrapping="Wrap" Foreground="#666" FontSize="12" />
+    </Grid>
+</Window>
+

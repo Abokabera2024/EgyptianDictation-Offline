@@ -1,0 +1,12 @@
+{
+  "modelPath": "C:\\ProgramData\\EgyptianDictation\\Models\\cohere-transcribe-arabic-07-2026-Q5_K_M.gguf",
+  "language": "ar",
+  "threads": 0,
+  "backend": "auto",
+  "vadPreRollMs": 250,
+  "vadMinimumSpeechMs": 240,
+  "vadEndSilenceMs": 450,
+  "vadBoundarySilenceMs": 160,
+  "targetUtteranceSeconds": 4,
+  "maxUtteranceSeconds": 12
+}

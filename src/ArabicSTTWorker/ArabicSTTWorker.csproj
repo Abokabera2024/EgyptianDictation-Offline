@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>ArabicSTTWorker</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EgyptianDictation.Contracts\EgyptianDictation.Contracts.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="Exists('..\..\NativeSTT\runtime\transcribe-native-windows-x86_64-cpu-vulkan\transcribe.dll')">
+    <Content Include="..\..\NativeSTT\runtime\transcribe-native-windows-x86_64-cpu-vulkan\transcribe.dll" Link="transcribe.dll" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\NativeSTT\runtime\transcribe-native-windows-x86_64-cpu-vulkan\ggml.dll" Link="ggml.dll" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\NativeSTT\runtime\transcribe-native-windows-x86_64-cpu-vulkan\ggml-base.dll" Link="ggml-base.dll" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\NativeSTT\runtime\transcribe-native-windows-x86_64-cpu-vulkan\ggml-cpu-*.dll" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\NativeSTT\runtime\transcribe-native-windows-x86_64-cpu-vulkan\ggml-vulkan.dll" Link="ggml-vulkan.dll" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

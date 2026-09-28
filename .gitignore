@@ -1,0 +1,34 @@
+# Local SDKs, package caches, virtual environments, and scratch data
+/.dotnet/
+/.packages/
+/.tools/
+/.venv/
+/tmp/
+**/__pycache__/
+*.pyc
+*.crdownload
+
+# Build and publish output (release installers are GitHub Release assets)
+/artifacts/
+**/bin/
+**/obj/
+/installer/payload*.zip
+
+# Downloaded model and redistributable installers are published separately
+/*.gguf
+/models/
+/prerequisites/*.exe
+/transcribe.cpp-main.zip
+/NativeSTT/runtime/
+
+# Editor, OS, and private local configuration
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+.env
+.env.*
+*.pfx
+*.pem
+*.key

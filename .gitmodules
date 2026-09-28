@@ -1,0 +1,3 @@
+[submodule "NativeSTT/transcribe.cpp"]
+	path = NativeSTT/transcribe.cpp
+	url = https://github.com/handy-computer/transcribe.cpp.git
